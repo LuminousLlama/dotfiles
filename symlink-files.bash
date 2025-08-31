@@ -2,6 +2,6 @@
 
 REPO=($PWD)
 
-ln -sfn "$REPO/.bashrc"     "$HOME/.bashrc"
-ln -sfn "$REPO/.vimrc"      "$HOME/.vimrc"
-ln -sfn "$REPO/.gitconfig"  "$HOME/.gitconfig"
+ln -sfn "$REPO/src/.bashrc"     "$HOME/.bashrc"
+ln -sfn "$REPO/src/.vimrc"      "$HOME/.vimrc"
+ln -sfn "$REPO/src/.gitconfig"  "$HOME/.gitconfig"
