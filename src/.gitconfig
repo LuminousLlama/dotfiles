@@ -1,5 +1,10 @@
 [user]
 	name = LuminousLlama
 	email = keyushattarde@gmail.com
+	signingKey = /home/keyush/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true
