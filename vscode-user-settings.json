@@ -1,0 +1,191 @@
+{
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": true,
+    "extensions.ignoreRecommendations": true,
+    "update.mode": "default",
+
+    "update.showReleaseNotes": true,
+    "git.autofetch": true,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Default Dark+",
+    "editor.minimap.enabled": false,
+
+    //disable copilot chat menu on boot
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+    // user defined allowed spellcheck words 
+    "cSpell.userWords": [
+        "Attarde",
+        "castable",
+        "checkstyle",
+        "colcon",
+        "huskybot",
+        "Keyush",
+        "maniskill",
+        "rclpy",
+        "teleop",
+        "wasd"
+    ],
+
+
+    // JSON
+    "json.format.keepLines": true,
+
+
+    // JAVA
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.completion.guessMethodArguments": false,
+    "java.inlayHints.parameterNames.enabled": "none",
+    "redhat.telemetry.enabled": false,
+
+
+    // vim settings
+    "vim.useSystemClipboard": true,
+    "vim.autoindent": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.showcmd": true,
+    "vim.showmodename": true,
+    "vim.surround": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 250, 250, 0.5)",
+    "vim.inccommand": "replace",
+
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.leader": "<Space>",
+    // insert mode remaps
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<CapsLock>" ],
+            "after": [ "<Esc>" ]
+        }
+    ],
+
+    // normal mode remaps
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<C-d" ],
+            "after": [ "<C-d", "z", "z" ]
+        },
+        {
+            "before": [ "<C-u" ],
+            "after": [ "<C-u", "z", "z" ]
+        },
+        {
+            "before": [ "n" ],
+            "after": [ "n", "z", "z" ]
+        },
+        {
+            "before": [ "<leader>", "<Space>" ],
+            "commands": [ ":noh" ]
+        },
+        {
+            "before": [ "<leader>", "q" ],
+            "commands": [ "workbench.action.closeActiveEditor" ]
+        },
+        {
+            "before": [ "<leader>", "f" ],
+            "commands": [ "workbench.action.quickOpen" ]
+        },
+        {
+            "before": [ "<leader>", "g", "d" ],
+            "commands": [ "workbench.view.scm", "git.openChange" ]
+        },
+        {
+            "before": [ "<leader>", "s", "p" ],
+            "commands": [ "workbench.action.findInFiles" ]
+        },
+
+        // dont yank when deleting by default
+        {
+            "before": [ "d" ],
+            "after": [ "\"", "_", "d" ]
+        },
+        {
+            "before": [ "D" ],
+            "after": [ "\"", "_", "D" ]
+        },
+        {
+            "before": [ "d", "d" ],
+            "after": [ "\"", "_", "d", "d" ]
+        },
+
+        // yank when deleting only if using leader
+        {
+            "before": [ "<leader>", "d" ],
+            "after": [ "d" ]
+        },
+        {
+            "before": [ "<leader>", "d", "d" ],
+            "after": [ "d", "d" ]
+        },
+        {
+            "before": [ "<leader>", "D" ],
+            "after": [ "D" ]
+        }
+    ],
+
+    // dont yank when deleting in visual mode. use leader to yank when deleting
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "d" ],
+            "after": [ "\"", "_", "d" ]
+        },
+        {
+            "before": [ "<leader>", "d" ],
+            "after": [ "d" ]
+        }
+    ],
+
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-u>": true,
+
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-f>": false,
+        "<C-y>": false
+    },
+
+    // vim settings but vscode implemented
+    "editor.cursorSurroundingLines": 15,
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "trailing",
+    "editor.renderLineHighlight": "line",
+    "editor.wordWrapColumn": 100,
+    "editor.rulers": [ 80 ],
+    "editor.cursorBlinking": "blink",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.wordWrap": "off",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+
+    "workbench.editor.showTabs": "multiple",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.enablePreview": false,
+
+    "git.closeDiffOnOperation": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmPasteNative": false,
+
+    // need this for vscode to detect that capslock is remaped to esc
+    "keyboard.dispatch": "keyCode",
+
+    //end of manual changes. Anything below this has been added by vscode when 
+    // configuring something with the GUI
+}
