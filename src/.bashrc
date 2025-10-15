@@ -121,3 +121,6 @@ source /opt/ros/humble/setup.bash
 # colcon cli autocomplete
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 alias sws='source install/setup.bash'
+
+# pip auto complete
+eval "$(pip completion --bash)"
